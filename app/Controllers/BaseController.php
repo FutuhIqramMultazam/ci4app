@@ -21,6 +21,7 @@ use Psr\Log\LoggerInterface;
  */
 abstract class BaseController extends Controller
 {
+    public $nama;
     /**
      * Instance of the main Request object.
      *
@@ -54,5 +55,7 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = \Config\Services::session();
+
+        $this->nama = "Futuh Iqram multazam";
     }
 }
