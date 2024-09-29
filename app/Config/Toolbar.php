@@ -34,15 +34,14 @@ class Toolbar extends BaseConfig
      * @var list<class-string>
      */
     public array $collectors = [
-        Timers::class,
+        /*  Timers::class,
         Database::class,
         Logs::class,
         Views::class,
         // \CodeIgniter\Debug\Toolbar\Collectors\Cache::class,
         Files::class,
         Routes::class,
-        Events::class,
-    ];
+        Events::class, */]; // ini saya matikan karena ini membuat app loading lama dan mempersulit ketika saya dev
 
     /**
      * --------------------------------------------------------------------------
@@ -117,6 +116,12 @@ class Toolbar extends BaseConfig
      * @var list<string>
      */
     public array $watchedExtensions = [
-        'php', 'css', 'js', 'html', 'svg', 'json', 'env',
+        'php',
+        'css',
+        'js',
+        'html',
+        'svg',
+        'json',
+        'env',
     ];
 }
